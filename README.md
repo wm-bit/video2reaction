@@ -19,7 +19,7 @@ train_dataset = Video2Reaction(metadata_file_path=os.path.join(metadata_dir, f"{
                                  cache_file_path=f"{cache_folder}/{split}_{visual_encoder}_{text_encoder}_{audio_encoder_acoustic}_{audio_encoder_semantic}.pt")
 ```
 
-# About the dataset
+## About the dataset
 
 * Full dataset access:  https://huggingface.co/datasets/video2reac/Video2Reaction/
 
@@ -40,8 +40,8 @@ SENTIMENT_2_FINER_GRAINED_MAPPING = {
 }
 ```
 
-# Running instructions
-# To create virtual environment
+## Running instructions
+* To create virtual environment
 ```bash
 python -m venv reaction-video-venv
 pip install -r reaction-video-venv-requirements.txt
