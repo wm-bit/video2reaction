@@ -21,6 +21,8 @@ train_dataset = Video2Reaction(metadata_file_path=os.path.join(metadata_dir, f"{
 
 # About the dataset
 
+* Full dataset access:  https://huggingface.co/datasets/video2reac/Video2Reaction/
+
 * REACTION_CLASSES
 ```python
 REACTION_CLASSES = ['sadness', 'disgust', 'grief', 'fear', 'disapproval', 'disappointment', 'embarrassment', 'nervousness', 'annoyance', 'anger', 'confusion', 'realization', 'caring', 'curiosity', 'relief', 'approval', 'surprise', 'excitement', 'amusement', 'admiration', 'joy']
