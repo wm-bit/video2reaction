@@ -1,0 +1,14 @@
+exp_name: cten_vaanet
+
+train:
+  need_train: True
+  is_erasing: True
+  audio_mode: acoustic
+  loss_fn: CumulativeAbsoluteDistanceLoss
+  # loss_fn: CJSLoss
+  # loss_fn: CrossEntropyLoss
+  batch_size: 128
+  num_epochs: 200
+  lr: 0.001
+  weight_decay: 1e-4
+  momentum: 0.9

@@ -1,0 +1,37 @@
+exp_name: mminfomax
+
+train:
+  need_train: True
+  batch_size: 128
+  num_epochs: 200
+  audio_mode: acoustic
+  loss_fn: CrossEntropyLoss
+  # loss_fn: CJSLoss
+  # num_epochs: 1
+
+  optim_mmilb: SGD
+  lr_mmilb: 0.001
+  weight_decay_mmilb: 1e-4
+  momentum_mmilb: 0.9
+
+  optim_main: SGD
+  lr_main: 0.001
+  weight_decay_main: 1e-4
+  momentum_main: 0.9
+
+  # optim_mmilb: Adam
+  # lr_mmilb: 0.001
+  # weight_decay_mmilb: 1e-4
+  # # momentum_mmilb: 0.9
+
+  # optim_main: Adam
+  # lr_main: 0.001
+  # weight_decay_main: 1e-4
+  # # momentum_main: 0.9
+
+  add_va: False
+  is_contrastive: True
+  alpha: 0.1
+  beta: 0.1
+  update_batch: 1
+  clip: 1.0
