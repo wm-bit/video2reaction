@@ -39,3 +39,33 @@ SENTIMENT_2_FINER_GRAINED_MAPPING = {
 "ambiguous": ["realization", "surprise", "curiosity", "confusion"]
 }
 ```
+
+# Running instructions
+* To run LDL baseline
+```bash
+python run_ldl_baselines.py \
+    --metadata_dir "/project/metadata/dir" \
+    --cache_folder "/project/cache_folder" 
+    --visual_encoder "vit" \
+    --text_encoder "bert-base-uncased" \
+    --audio_encoder_acoustic "clap_general" \
+    --audio_encoder_semantic "hubert_large" \
+    --batch_size 500 \
+    --epochs 200 \
+    --checkpoint_base_dir "/project/checkpoint_dir" \
+    --methods SA_BFGS \
+    --seed 320
+```
+* To run CTEN baseline
+in `src-mmim-cten` folder:
+```bash
+python scripts/train_cten.py --config vaanet.yaml --seed_idx 0 --audio_mode average --is_erasing 0 --loss CrossEntropyLoss
+```
+Training configs/hyperparams are included in `src-mmin-cten/config/v2r/vaanet.yaml`
+
+* To run MMIM baseline
+in `src-mmim-cten` folder:
+```bash
+python scripts/train_mminfomax.py --config mminfomax.yaml --seed_idx 0 --audio_mode average --loss CrossEntropyLoss
+```
+Training configs/hyperparams are included in `src-mmin-cten/config/v2r/mminfomax.yaml`
