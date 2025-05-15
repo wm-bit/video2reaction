@@ -41,6 +41,11 @@ SENTIMENT_2_FINER_GRAINED_MAPPING = {
 ```
 
 # Running instructions
+# To create virtual environment
+```bash
+python -m venv reaction-video-venv
+pip install -r reaction-video-venv-requirements.txt
+```
 * To run LDL baseline
 ```bash
 python run_ldl_baselines.py \
