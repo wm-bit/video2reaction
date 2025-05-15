@@ -18,3 +18,13 @@ train_dataset = Video2Reaction(metadata_file_path=os.path.join(metadata_dir, f"{
                                  lazy_load=False, use_time_dimension=True,
                                  cache_file_path=f"{cache_folder}/{split}_{visual_encoder}_{text_encoder}_{audio_encoder_acoustic}_{audio_encoder_semantic}.pt")
 ```
+
+# About the dataset
+
+* REACTION_CLASSES = ['sadness', 'disgust', 'grief', 'fear', 'disapproval','disappointment','embarrassment','nervousness','annoyance','anger','confusion','realization','caring','curiosity','relief','approval','surprise','excitement','amusement','admiration','joy']
+* MOVIW_GENRES = ['Music', 'Family', 'Crime', 'Thriller', 'Action', 'Western', 'Sci-Fi', 'Short', 'History', 'Adventure', 'Fantasy', 'Romance', 'Film-Noir', 'Biography', 'Comedy', 'Musical', 'War', 'Horror', 'Animation', 'Documentary', 'Sport', 'Mystery', 'Drama']
+* SENTIMENT_2_FINER_GRAINED_MAPPING = {
+"positive": ["amusement", "excitement", "joy", "love", "desire", "optimism", "caring", "pride", "admiration", "gratitude", "relief", "approval"],
+"negative": ["fear", "nervousness", "remorse", "embarrassment", "disappointment", "sadness", "grief", "disgust", "anger", "annoyance", "disapproval"],
+"ambiguous": ["realization", "surprise", "curiosity", "confusion"]
+}
