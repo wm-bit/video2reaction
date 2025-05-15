@@ -1,0 +1,80 @@
+[
+    {
+        "comment": "This movie made me cry so much because it reminded me of my childhood.",
+        "output": {
+            "high_level_reaction": [
+                "sadness"
+            ],
+            "finer_grained_reaction": [
+                "sadness"
+            ],
+            "reaction_reason": "it reminded me of my childhood",
+            "reaction_reason_type": [
+                "relatable"
+            ]
+        }
+    },
+    {
+        "comment": "I can't believe how bad the acting was in this movie.",
+        "output": {
+            "high_level_reaction": [
+                "anger"
+            ],
+            "finer_grained_reaction": [
+                "disapproval",
+                "annoyance",
+                "disappointment"
+            ],
+            "reaction_reason": "the acting was bad",
+            "reaction_reason_type": [
+                "cinematography"
+            ]
+        }
+    },
+    {
+        "comment": "The singing and screaming combined with the family shouting somehow makes this scene hilarious",
+        "output": {
+            "high_level_reaction": [
+                "surprise"
+            ],
+            "finer_grained_reaction": [
+                "amusement",
+                "relief"
+            ],
+            "reaction_reason": "The family shouting creates a comical situation",
+            "reaction_reason_type": [
+                "music"
+            ]
+        }
+    },
+    {
+        "comment": "I'm so scared of the dark, but this movie made me feel better about it.",
+        "output": {
+            "high_level_reaction": [
+                "joy"
+            ],
+            "finer_grained_reaction": [
+                "relief"
+            ],
+            "reaction_reason": "It helped them become less afraid of the dark.",
+            "reaction_reason_type": [
+                "inspiration"
+            ]
+        }
+    },
+    {
+        "comment": "I love it",
+        "output": {
+            "high_level_reaction": [
+                "joy"
+            ],
+            "finer_grained_reaction": [
+                "joy"
+            ],
+            "reaction_reason": "none",
+            "reaction_reason_type": [
+                "none"
+            ]
+        }
+    }
+]
