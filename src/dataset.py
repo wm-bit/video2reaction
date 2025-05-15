@@ -18,7 +18,7 @@ import pickle
 #%%
 
 # Define the fixed class order
-['sadness',
+REACTION_CLASSES = ['sadness',
  'disgust',
  'grief',
  'fear',
@@ -39,6 +39,7 @@ import pickle
  'amusement',
  'admiration',
  'joy']
+
 VAD_LEXICON = json.load(open("./data/nrc-python/nrc_vad.json"))
 REACTION_CLASSES_VAD = {reaction: VAD_LEXICON[reaction] for reaction in REACTION_CLASSES}
 REACTION_CLASSES_SORTED_BY_VA = sorted(REACTION_CLASSES, key=lambda x: (REACTION_CLASSES_VAD[x]["valence"], REACTION_CLASSES_VAD[x]["arousal"]))
